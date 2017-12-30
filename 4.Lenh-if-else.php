@@ -1,6 +1,6 @@
 <?php
 
-    /* if */
+    /* if-else */
     $so_can_kiem_tra = 12;
     $sodu = $so_can_kiem_tra % 2;
     if($sodu == 0){
@@ -29,7 +29,18 @@
     else{
         echo 'các màu khác <br>';
     }
+
+    $so = 100;
+    if($so % 2 == 0){
+        if($so >= 100){
+            echo 'số chẵn và lớn hơn 100';
+        }
+        else{
+            echo 'số chẵn và nhỏ hơn 100';
+        }
+    }
+    else{
+        echo 'số lẻ';
+    }
     
-
-
 ?>
