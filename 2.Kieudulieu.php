@@ -45,14 +45,13 @@
     var_dump($ten_mang);
     print_r($ten_mang);
     echo '<br>';
-    echo $ten_mang[2];
-    echo '<br>';
+    echo $ten_mang[2].'<br>';
     
     $e = array();//nhiều chiều
     $e[0][1] = 123;
     $e[0][2] = 321;
-    echo $e[0][1]; // in ra giá trị 123
-    echo $e[0][2]; // in ra giá trị 321
+    echo $e[0][1].'<br>'; // in ra giá trị 123
+    echo $e[0][2].'<br>'; // in ra giá trị 321
     
     /* kiểm tra mảng */
     var_dump(is_array($e));

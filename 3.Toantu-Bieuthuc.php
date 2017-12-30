@@ -7,8 +7,7 @@
     $ketqua = $a + $b/2;
     $ketqua = $a / 7;
     $ketqua = $a + ($b = 5 + 6);
-    echo $ketqua;
-    echo  '<br>';
+    echo $ketqua.'<br>';
 
     /* toán tử quan hệ */
     $t = ($a == 12); // Biến $t có giá trị là TRUE vì biểu thức (12 == 12) đúng
@@ -20,8 +19,7 @@
     $ab = 100;
     $cd = 200;
     $tong = $ab + $cd;
-    echo $tong;
-    echo '<br>';
+    echo $tong.'<br>';
     $check = ($ab < $cd) && ($tong > 200);
     echo $check;
 
