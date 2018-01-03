@@ -22,7 +22,7 @@
     $a = 12;
     $b = 13;
     $c = $a + $b;
-    echo $a;
+    echo $a . '<br>';
     goto end;
     echo $b;
     end:
