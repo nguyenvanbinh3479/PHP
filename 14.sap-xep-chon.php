@@ -24,7 +24,31 @@
         // Trả về vị trí nhỏ nhất
         return $min;
     }
-
-    
+    /* sắp xếp tăng dần */
+    function SelectSortAscending($mang)
+    {
+        //đếm tổng phần tử mảng
+        $sophantu = count($mang);
+        //lặp để sắp xếp
+        for ($i = 0; $i < $sophantu - 1; $i++)
+        {
+            //tìm phần tử nhỏ nhất
+            $min = $i;
+            for ($j = $i + 1; $j <$sophantu; $j++)
+            {
+                if ($mang[$j] < $mang[$min])
+                {
+                    $min = $j;
+                }
+            }
+            // Sau khi có vị trí nhỏ nhất thì hoán vị
+            // với vị trí thứ $i
+            $temp = $mang[$i];
+            $mang[$i] = $mang[$min];
+            $mang[$min] = $temp; 
+        }
+        //trả về mảng sắp xếp
+        return $mang;
+    }
 
 ?>
