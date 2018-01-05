@@ -25,10 +25,10 @@
         return $min;
     }
     /* sắp xếp tăng dần */
-    function SelectSortAscending($mang)
+    function SelectSortAscending($mang1)
     {
         //đếm tổng phần tử mảng
-        $sophantu = count($mang);
+        $sophantu = count($mang1);
         //lặp để sắp xếp
         for ($i = 0; $i < $sophantu - 1; $i++)
         {
@@ -36,19 +36,19 @@
             $min = $i;
             for ($j = $i + 1; $j <$sophantu; $j++)
             {
-                if ($mang[$j] < $mang[$min])
+                if ($mang1[$j] < $mang1[$min])
                 {
                     $min = $j;
                 }
             }
             // Sau khi có vị trí nhỏ nhất thì hoán vị
             // với vị trí thứ $i
-            $temp = $mang[$i];
-            $mang[$i] = $mang[$min];
-            $mang[$min] = $temp; 
+            $temp = $mang1[$i];
+            $mang1[$i] = $mang1[$min];
+            $mang1[$min] = $temp; 
         }
         //trả về mảng sắp xếp
-        return $mang;
+        return $mang1;
     }
 
 ?>
