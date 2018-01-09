@@ -9,4 +9,7 @@
     /* khai báo định dang file */
     header("Content-type: text/javascript");
 
+    /* header request */
+    header('Content-Type: image/png');
+
 ?>
